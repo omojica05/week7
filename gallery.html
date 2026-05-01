@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Olivia Mojica - Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/my-styles.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&display=swap" rel="stylesheet">
+
+    </head>
+
+      <body>
+        <div>
+            <header class="w3-container w3-sand"> 
+                <h1>Olivia Mojica Portfolio</h1>
+
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li><a href="aboutme.html" class="nav-link">About Me</a></li>
+                        <li><a href="resume.html" class="nav-link">Resume</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span  class= "bar"></span>
+                        <span  class= "bar"></span>
+                        <span  class= "bar"></span>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+                <div class="w3-container w3-center">
+                    <h1>Welcome to the Gallery</h1>
+                </div>
+
+<div class="row">
+  <div class="column">
+    <img src="assets/CharcoalRecreation-72dpi.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="assets/CollagePortrait-72dpi.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="assets/PhysicalCollage-72dpi.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="assets/StevieNicksTourPoster-72dpi.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="assets/TypographicQuote-72dpi.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+</div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="assets/CharcoalRecreation-72dpi.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="assets/CollagePortrait-72dpi.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="assets/PhysicalCollage-72dpi.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="assets/StevieNicksTourPoster-72dpi.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="assets/TypographicQuote-72dpi.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="assets/CharcoalRecreation-72dpi.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="assets/CollagePortrait-72dpi.jpg" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="assets/PhysicalCollage-72dpi.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="assets/StevieNicksTourPoster-72dpi.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+   
+    <div class="column">
+      <img class="demo" src="assets/TypographicQuote-72dpi.jpg" onclick="currentSlide(5)" alt="Lights">
+    </div>
+</div>
+
+    <script src="javascript/script.js"></script> 
+
+<footer class="w3-container w3-center w3-margin-top">
+    <p>You Can Find Me On...</p>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+      </body>
+      </html>
